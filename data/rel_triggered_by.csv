@@ -1,0 +1,13 @@
+actionId,feedbackId,source,confidence,validFrom
+action_alert_01,fb_03,clinical_rule_engine,0.99,2026-10-22T08:15:10Z
+action_med_adj_01,fb_01,clinical_rule_engine,0.95,2026-10-20T10:05:00Z
+action_03,fb_04,clinical_rule_engine,0.99,2026-10-20T20:00:00Z
+action_04,fb_08,clinical_rule_engine,0.92,2026-10-21T08:00:00Z
+action_05,fb_09,clinical_rule_engine,0.95,2026-10-21T11:00:00Z
+action_06,fb_10,clinical_rule_engine,0.96,2026-10-21T14:00:00Z
+action_07,fb_11,clinical_rule_engine,1.0,2026-10-21T17:00:00Z
+action_08,fb_13,clinical_rule_engine,0.99,2026-10-21T23:00:00Z
+action_09,fb_14,clinical_rule_engine,0.98,2026-10-22T02:00:00Z
+action_10,fb_16,clinical_rule_engine,0.97,2026-10-22T08:00:00Z
+action_11,fb_17,clinical_rule_engine,0.97,2026-10-22T11:00:00Z
+action_12,fb_18,clinical_rule_engine,0.94,2026-10-22T14:00:00Z

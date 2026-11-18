@@ -1,0 +1,16 @@
+deviceId,deviceType,status
+POX-9921,PulseOximeter,Active
+WSR-1044,WearableSensor,Active
+POX-1111,PulseOximeter,Active
+WSR-1148,WearableSensor,Active
+POX-1185,PulseOximeter,Active
+WSR-1222,WearableSensor,Active
+POX-1259,PulseOximeter,Active
+WSR-1296,WearableSensor,Active
+POX-1333,PulseOximeter,Active
+WSR-1370,WearableSensor,Active
+POX-1407,PulseOximeter,Active
+WSR-1444,WearableSensor,Active
+POX-1481,PulseOximeter,Active
+WSR-1518,WearableSensor,Inactive
+POX-1555,PulseOximeter,Inactive

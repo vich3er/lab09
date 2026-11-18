@@ -1,0 +1,26 @@
+patientId,fullName,age,gender,ward
+patient_01,Коваленко Олександр Петрович,64,Male,Cardiology-1
+patient_02,Мельник Ірина Василівна,52,Female,Therapy-2
+patient_03,Бондаренко Тарас Ігорович,58,Male,Cardiology-1
+patient_04,Ткаченко Василь Олександрович,26,Male,Pulmonology-1
+patient_05,Олійник Марія Олександрівна,33,Female,Cardiology-1
+patient_06,Мороз Василь Олександрович,30,Male,Therapy-2
+patient_07,Шевченко Ганна Олександрівна,26,Female,Cardiology-1
+patient_08,Олійник Сергій Олександрович,57,Male,Therapy-2
+patient_09,Мороз Олена Олександрівна,37,Female,Therapy-2
+patient_10,Олійник Віктор Олександрович,53,Male,Therapy-2
+patient_11,Шевченко Світлана Олександрівна,73,Female,Cardiology-2
+patient_12,Поліщук Віктор Олександрович,42,Male,Cardiology-2
+patient_13,Поліщук Марія Олександрівна,31,Female,Cardiology-1
+patient_14,Ткаченко Віктор Олександрович,47,Male,Pulmonology-1
+patient_15,Шевчук Катерина Олександрівна,76,Female,Cardiology-1
+patient_16,Мороз Ігор Олександрович,32,Male,Therapy-1
+patient_17,Мороз Наталія Олександрівна,43,Female,Therapy-2
+patient_18,Савченко Юрій Олександрович,37,Male,Cardiology-1
+patient_19,Руденко Олена Олександрівна,39,Female,Pulmonology-1
+patient_20,Олійник Максим Олександрович,80,Male,Cardiology-1
+patient_21,Шевчук Ганна Олександрівна,54,Female,Pulmonology-1
+patient_22,Поліщук Дмитро Олександрович,47,Male,Cardiology-2
+patient_23,Шевчук Вікторія Олександрівна,69,Female,Cardiology-1
+patient_24,Руденко Богдан Олександрович,35,Male,Therapy-2
+patient_25,Кравченко Марія Олександрівна,54,Female,Therapy-1

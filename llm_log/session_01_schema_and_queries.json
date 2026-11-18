@@ -1,0 +1,41 @@
+[
+  {
+    "log_id": "LLM-01",
+    "date": "2026-11-11",
+    "model": "Gemini 2.5 Pro",
+    "parameters": {
+      "temperature": 0.2,
+      "seed": 42
+    },
+    "prompt_version": "v1.0-graph-schema",
+    "user_prompt": "Спроєктуй LPG-схему для Neo4j у предметній області моніторингу стану пацієнтів на основі фідбеків, перетворивши класи OWL з ЛР 7 у мітки вузлів та додавши властивості походження (source, confidence, validFrom) на зв'язки.",
+    "raw_output": "Запропоновано 8 міток вузлів (:Patient, :PatientFeedback, :Symptom, :MedicalCondition, :VitalSign, :MedicalDevice, :HealthcareProvider, :Action) та 9 типів зв'язків (:SUBMITTED, :MENTIONS_SYMPTOM, :ASSOCIATED_WITH_SYMPTOM, :HAS_CONDITION, :IS_MONITORED_BY, :MEASURES, :HAS_VITAL_SIGN, :TREATS, :TRIGGERED_BY). Запропоновано також додатковий зв'язок :PRESCRIBED_DRUG для ліків.",
+    "human_decision": "Частково прийнято (V2). Прийнято 8 міток та 9 зв'язків, оскільки вони повністю покривають CQ1-CQ10 та узгоджені з онтологією ЛР 7. Відхилено зв'язок :PRESCRIBED_DRUG, оскільки сутність медикаментів відсутня у вхідних даних ЛР 6-8."
+  },
+  {
+    "log_id": "LLM-02",
+    "date": "2026-11-11",
+    "model": "Gemini 2.5 Pro",
+    "parameters": {
+      "temperature": 0.1,
+      "seed": 42
+    },
+    "prompt_version": "v1.1-cypher-queries",
+    "user_prompt": "Згенеруй Cypher-запити для аналізу впливу (глибина >= 3) та оптимізуй запит пошуку пацієнтів із негативними відгуками і тахікардією (HeartRate > 110) за допомогою індексів.",
+    "raw_output": "Запропоновано запит аналізу впливу (c:MedicalCondition)<-[:HAS_CONDITION]-(p:Patient)-[:SUBMITTED]->(f:PatientFeedback)<-[:TRIGGERED_BY]-(a:Action) та складений індекс CREATE INDEX vital_type_val_idx FOR (v:VitalSign) ON (v.vitalType, v.valueNumeric) зі зміною порядку обходу в MATCH.",
+    "human_decision": "Прийнято та верифіковано (V2). Запити виконано в Neo4j Browser. Профілювання PROFILE підтвердило заміну NodeByLabelScan на NodeIndexSeek і зменшення DB Hits з 384 до 114."
+  },
+  {
+    "log_id": "LLM-03",
+    "date": "2026-11-12",
+    "model": "Gemini 2.5 Pro",
+    "parameters": {
+      "temperature": 0.0,
+      "seed": 42
+    },
+    "prompt_version": "v1.2-text-to-cypher",
+    "user_prompt": "Сформуй 12 тестових пар (питання українською -> Cypher-запит) для оцінки text-to-Cypher із режимом READ-ONLY, перевіркою схеми та обов'язковим LIMIT, включивши 3 приклади з помилками для тестування валідатора.",
+    "raw_output": "Згенеровано 12 тестових кейсів T01-T12: 9 валідних запитів та 3 контрольні помилки (T10 - вигадана мітка :Doctor і зв'язок :CURES; T11 - заборонена операція SET; T12 - відсутній оператор LIMIT).",
+    "human_decision": "Прийнято та верифіковано програмно (V4). Запущено скрипт res5_st3-4.py, який зберіг результати в tests/t2c.jsonl та підтвердив точність 9/12 (75.0%) і коректне перехоплення всіх 3 порушень."
+  }
+]

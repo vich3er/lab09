@@ -1,0 +1,9 @@
+conditionId,name,conditionType,icdCode
+cond_heart_failure,Хронічна серцева недостатність,Chronic,I50.9
+cond_hypertension,Артеріальна гіпертензія,Chronic,I10
+cond_pneumonia,Гостра пневмонія,Acute,J18.9
+cond_asthma,Бронхіальна астма,Chronic,J45.9
+cond_angina,Нестабільна стенокардія,Acute,I20.0
+cond_bronchitis,Гострий бронхіт,Acute,J20.9
+cond_arrhythmia,Фібриляція передсердь,Chronic,I48.9
+cond_covid19,Гостра респіраторна інфекція COVID-19,Acute,U07.1

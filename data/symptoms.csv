@@ -1,0 +1,13 @@
+symptomId,name,category,severity
+symptom_dyspnea,Задишка,Respiratory,Severe
+symptom_chest_pain,Біль у грудях,Pain,Critical
+symptom_fever,Підвищена температура,General,Moderate
+symptom_cough,Сухий кашель,Respiratory,Moderate
+symptom_tachycardia,Прискорене серцебиття,Cardiovascular,Severe
+symptom_fatigue,Загальна слабкість,General,Mild
+symptom_dizziness,Запаморочення,Neurological,Moderate
+symptom_edema,Набряки нижніх кінцівок,Cardiovascular,Moderate
+symptom_hypoxia,Зниження сатурації,Respiratory,Critical
+symptom_headache,Головний біль,Pain,Mild
+symptom_wheezing,Хрипи при диханні,Respiratory,Severe
+symptom_palpitations,Перебої в роботі серця,Cardiovascular,Severe

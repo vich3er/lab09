@@ -1,0 +1,7 @@
+providerId,name,role,specialization
+doc_smith,Д-р Сміт Джон,Doctor,Cardiology
+nurse_joy,Медсестра Джой Анна,Nurse,General Care
+doc_koval,Д-р Коваль Марія,Doctor,Pulmonology
+doc_moroz,Д-р Мороз Віталій,Doctor,Internal Medicine
+nurse_savchuk,Медсестра Савчук Олена,Nurse,Cardiology
+nurse_boiko,Медсестра Бойко Надія,Nurse,Intensive Care
